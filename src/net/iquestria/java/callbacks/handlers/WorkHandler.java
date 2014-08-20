@@ -1,13 +1,13 @@
 package net.iquestria.java.callbacks.handlers;
 
-import net.iquestria.java.models.User;
+import net.iquestria.java.models.Work;
 
 /**
  * (c) iQuestria Team 2014
  * See LICENSE file for license details.
  */
-public class UserHandler implements Runnable {
-    public void run(User user){
+public class WorkHandler implements Runnable {
+    public void run(Work work){
 
     }
 
