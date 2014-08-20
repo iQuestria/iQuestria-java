@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="iquestria-0.2">
-    <output-path>$PROJECT_DIR$/release</output-path>
-    <root id="archive" name="iquestria-0.2.jar">
-      <element id="module-output" name="iQuestria" />
-    </root>
-  </artifact>
-</component>
