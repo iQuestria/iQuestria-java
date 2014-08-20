@@ -1,4 +1,4 @@
-package net.iquestria.java.callbacks.runnables;
+package net.iquestria.java.callbacks.handlers;
 
 import net.iquestria.java.models.User;
 

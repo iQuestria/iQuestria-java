@@ -3,7 +3,7 @@ package net.iquestria.java.callbacks;
 import com.squareup.okhttp.Callback;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
-import net.iquestria.java.callbacks.runnables.UserHandler;
+import net.iquestria.java.callbacks.handlers.UserHandler;
 import net.iquestria.java.models.User;
 import org.json.JSONException;
 import org.json.JSONObject;

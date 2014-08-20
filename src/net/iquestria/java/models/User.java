@@ -54,6 +54,6 @@ public class User {
     }
 
     private String generateProfileUrl(User user){
-        return "http://api.iquestria.net/fetchProfilePicture?id=" + user.id;
+        return "http://api.iquestria.net/fetchProfilePicture.php?id=" + user.id;
     }
 }

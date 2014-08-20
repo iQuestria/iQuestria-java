@@ -4,7 +4,7 @@ import com.squareup.okhttp.Call;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import net.iquestria.java.callbacks.UserCallback;
-import net.iquestria.java.callbacks.runnables.UserHandler;
+import net.iquestria.java.callbacks.handlers.UserHandler;
 
 /**
  * (c) iQuestria Team 2014
