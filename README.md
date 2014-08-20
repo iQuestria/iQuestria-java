@@ -1,6 +1,4 @@
 iQuestria Java Library
 ----------------------
 
-nothing yet go shoo somewhere else
-
-but if you really want to use it right now, jars are in the `release` directory
+Uses Square's OkHttp and OkIo libraries to communicate with the iQuestria API. It also has models and shit
