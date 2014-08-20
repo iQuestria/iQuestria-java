@@ -1,8 +1,5 @@
 package net.iquestria.java.models;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * (c) iQuestria Team 2014
  * See LICENSE file for license details.
@@ -17,9 +14,9 @@ public class Rank {
     public static Rank RANK_ADMIN = new Rank(3, "admin", "Admin", 2);
 
     public Rank(){
-        this.id = 0;
+        this.id = 1;
         this.name = "default";
-        this.displayName = "Default Rank";
+        this.displayName = "User";
         this.permissionLevel = 0;
     }
 
