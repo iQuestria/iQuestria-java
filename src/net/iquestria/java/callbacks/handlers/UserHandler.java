@@ -8,7 +8,6 @@ import net.iquestria.java.models.User;
  */
 public class UserHandler implements Runnable {
     public void run(User user){
-
     }
 
     @Override

@@ -7,8 +7,7 @@ import org.json.JSONObject;
  * (c) iQuestria Team 2014
  * See LICENSE file for license details.
  */
-public class User {
-    public Number id;
+public class User extends Model{
     public String username;
     public String realName;
     public String bio;

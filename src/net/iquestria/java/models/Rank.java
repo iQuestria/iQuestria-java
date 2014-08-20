@@ -7,8 +7,7 @@ import org.json.JSONObject;
  * (c) iQuestria Team 2014
  * See LICENSE file for license details.
  */
-public class Rank {
-    public Number id;
+public class Rank extends Model{
     public String name;
     public String displayName;
     public Number permissionLevel;
