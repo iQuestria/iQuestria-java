@@ -1,5 +1,6 @@
 package net.iquestria.java;
 
+import com.squareup.okhttp.Call;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import net.iquestria.java.callbacks.UserCallback;
@@ -16,6 +17,7 @@ public class iQuestria {
         OkHttpClient client = new OkHttpClient();
         Request req = new Request.Builder().url(API_BASE + "/users/" + id + ".json").build();
         UserCallback userCallback = new UserCallback(callback);
-        client.newCall(req).enqueue(userCallback);
+        Call call = client.newCall(req);
+        call.enqueue(userCallback);
     }
 }

@@ -23,10 +23,12 @@ public class UserCallback implements Callback {
         this.callback = callback;
     }
 
+    @Override
     public void onFailure(Request request, IOException e) {
-
+        callback.run(new User());
     }
 
+    @Override
     public void onResponse(Response response) throws IOException {
         String body = response.body().string();
         JSONParser parser = new JSONParser();
@@ -42,6 +44,6 @@ public class UserCallback implements Callback {
         String bio = (String) userObject.get("bio");
         String color = (String) userObject.get("color");
         User user = new User(id, username, realName, bio, Rank.RANK_DEFAULT, "", color);
-        callback.run(new User());
+        callback.run(user);
     }
 }

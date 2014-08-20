@@ -5,10 +5,10 @@ package net.iquestria.java.models;
  * See LICENSE file for license details.
  */
 public class Rank {
-    private Integer id;
-    private String name;
-    private String displayName;
-    private Integer permissionLevel;
+    public Integer id;
+    public String name;
+    public String displayName;
+    public Integer permissionLevel;
     public static Rank RANK_DEFAULT = new Rank(1, "default", "User", 0);
     public static Rank RANK_MODERATOR = new Rank(2, "mod", "Moderator", 1);
     public static Rank RANK_ADMIN = new Rank(3, "admin", "Admin", 2);
