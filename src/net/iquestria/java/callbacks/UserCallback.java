@@ -4,11 +4,9 @@ import com.squareup.okhttp.Callback;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
 import net.iquestria.java.callbacks.runnables.UserHandler;
-import net.iquestria.java.models.Rank;
 import net.iquestria.java.models.User;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.IOException;
 
@@ -31,19 +29,14 @@ public class UserCallback implements Callback {
     @Override
     public void onResponse(Response response) throws IOException {
         String body = response.body().string();
-        JSONParser parser = new JSONParser();
-        JSONObject userObject = new JSONObject();
+        JSONObject userObject = null;
+        User user = new User();
         try {
-            userObject = (JSONObject) parser.parse(body);
-        } catch (ParseException e) {
+            userObject = new JSONObject(body);
+            user = new User(userObject);
+        } catch (JSONException e) {
             e.printStackTrace();
         }
-        Number id = (Number) userObject.get("id");
-        String username = (String) userObject.get("username");
-        String realName = (String) userObject.get("real_name");
-        String bio = (String) userObject.get("bio");
-        String color = (String) userObject.get("color");
-        User user = new User(id, username, realName, bio, Rank.RANK_DEFAULT, "", color);
         callback.run(user);
     }
 }
