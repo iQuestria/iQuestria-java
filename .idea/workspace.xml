@@ -7,7 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de7e344c-cb4e-43a9-9bd1-8b055fd3a098" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\Users\TJ\IdeaProjects\iQuestria\.idea\artifacts\iquestria_0_1_3.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/iquestria_0_2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="iQuestria.iws" />
@@ -502,7 +501,11 @@
       <created>1408547165222</created>
       <updated>1408547165222</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="new jars">
+      <created>1408547302378</created>
+      <updated>1408547302378</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -556,7 +559,8 @@
     <MESSAGE value="@Override. Fuck." />
     <MESSAGE value="commit" />
     <MESSAGE value="lol whoops" />
-    <option name="LAST_COMMIT_MESSAGE" value="lol whoops" />
+    <MESSAGE value="new jars" />
+    <option name="LAST_COMMIT_MESSAGE" value="new jars" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
