@@ -1,6 +1,6 @@
 package net.iquestria.java;
 
-import net.iquestria.java.net.iquestria.java.models.User;
+import net.iquestria.java.models.User;
 
 /**
  * (c) iQuestria Team 2014
