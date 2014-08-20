@@ -5,12 +5,13 @@ package net.iquestria.java.models;
  * See LICENSE file for license details.
  */
 public class User {
-    private Integer id;
+    private Number id;
     private String username;
     private String realName;
     private String bio;
     private Rank rank;
     private String email;
+    private String color;
 
     public User(){
         this.id = 0;
@@ -21,17 +22,19 @@ public class User {
         this.email = "anon@iquestria.net";
     }
 
-    public User(Integer id,
+    public User(Number id,
                 String username,
                 String realName,
                 String bio,
                 Rank rank,
-                String email){
+                String email,
+                String color){
         this.id = id;
         this.username = username;
         this.realName = realName;
         this.bio = bio;
         this.rank = rank;
         this.email = email;
+        this.color = color;
     }
 }
